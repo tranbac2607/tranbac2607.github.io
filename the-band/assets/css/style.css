@@ -14,6 +14,10 @@ html {
     clear: both;
 }
 
+.text-white {
+    color: #fff;
+}
+
 #main {
 
 }
@@ -32,7 +36,7 @@ html {
     display: inline-block;
 }
 
-#nav, .subnav {
+#nav, .subnav, .tickets-list {
     list-style-type: none;
 }
 
@@ -183,6 +187,68 @@ html {
 #content .member-img {
     width: 154px;
     border-radius: 5px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.tickets-list {
+    background-color: #fff;
+    margin: 32px 0;
+}
+
+.tickets-list li {
+    font-size: 15px;
+    padding: 8px 16px;
+    color: #757575;
+    border-bottom: 1px solid #000;
+}
+
+.tickets-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.tickets-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+    margin-top: -2px;
+
+} 
+
+.places-list {
+    margin: 32px -8px 0;
+}
+
+.place-body {
+    background-color: #fff;
+}
+
+.place-item  {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+
+.place-img {
+    width: 100%;
+}   
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-items .place-buy-btn {
+    text-decoration: none;
 }
 
 #footer {
