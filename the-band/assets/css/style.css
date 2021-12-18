@@ -5,6 +5,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Helvetica, Arial, sans-serif;
 }
 /*  Ctr Shift L
@@ -18,8 +19,35 @@ html {
     color: #fff;
 }
 
-#main {
+.text-align {
+    text-align: center;
+}
 
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
 }
 
 #header {
@@ -132,14 +160,9 @@ html {
     margin-top: 25px;
 }
 
-
-#content {
-
-}
-
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 84px;
     margin: 10px 0;
     margin-left: auto;
     margin-right: auto;
@@ -409,6 +432,74 @@ html {
     }
 }
 
-#footer {
+.contact-content {
+    padding: 32px 0;
+}
 
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit {
+    float: right;
+    padding: 10px 16px;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+
+.contact-form .form-submit:hover {
+    background-color: #ccc;
+    color: #000;
+    border: none;
+}
+
+.map-section img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socials-list {
+    font-size: 24px;
+}
+
+#footer .socials-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);
 }

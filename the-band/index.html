@@ -11,19 +11,19 @@
     <div id="main">
         <div id="header">
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -41,7 +41,7 @@
         </div>
 
         <div id="content">
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">
@@ -64,7 +64,7 @@
 
                 <div class="clear"></div>
             </div>
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-white">TOUR DATES</h2>
                     <p class="section-sub-heading text-white">Remember to book your tickets!</p>
@@ -143,15 +143,56 @@
                 </div>
             </div>
 
-            <div class="content-section">
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                </div>           
+                                <div class="clear"></div>                 
+                            </div>
+                        
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                                </div>
+                            </div>
+                            <input class="form-submit mt-16" type="submit" value="Send">
+                        </form>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="map-section">
+                <img src="./assets/img/map/map.jpg" alt="Map">
             </div>
 
         </div>
 
         <div id="footer">
-            
+            <div class="socials-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter-alt"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="">w3.css</a></p>
         </div>
     </div>
 
