@@ -19,16 +19,16 @@ html {
     color: #fff;
 }
 
-.text-align {
+.text-center {
     text-align: center;
 }
 
 .mt-8 {
-    margin-top: 8px;
+    margin-top: 8px !important;
 }
 
 .mt-16 {
-    margin-top: 16px;
+    margin-top: 16px !important;
 }
 
 .row {
@@ -50,6 +50,10 @@ html {
     width: 50%;
 }
 
+.col-third {
+    width: 33.333333333%;
+}
+
 #header {
     position: fixed;
     height: 46px;
@@ -57,7 +61,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 1; 
 }
 
 #nav {
@@ -118,6 +122,14 @@ html {
     font-size: 14px;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
@@ -128,6 +140,15 @@ html {
     cursor: pointer;
 }
 
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .mobile-menu-btn:hover  {
+    background-color: #ccc;
+}
+
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -138,8 +159,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('../../assets/img/slider/chicago.jpg') top center / cover no-repeat;
-    z-index: 50;
+    background: url('../../assets/img/slider/chicago.jpg') top center / cover no-repeat;        
 }
 
 #slider .text-content{
@@ -162,10 +182,13 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 84px;
     margin: 10px 0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
@@ -192,14 +215,7 @@ html {
 }
 
 #content .member-list {
-    padding: 32px 0;
-    overflow: hidden;
-}
-
-#content .member-item {
-    text-align: center;
-    float: left;
-    width: 33.333333%;
+    margin-top: 32px;
 }
 
 #content .member-name {
@@ -249,8 +265,7 @@ html {
 } 
 
 .places-list {
-    margin: 32px -8px 0;
-    padding-bottom: 32px;
+    margin-top: 16px;
 }
 
 .place-item  {
@@ -298,6 +313,7 @@ html {
     margin-top: 8px;
     cursor: pointer;
     border: none;
+    text-align: center;
 }
 
 .place-buy-btn:hover {
@@ -315,7 +331,7 @@ html {
     display: none;
     align-items: center;
     justify-content: center;
-    z-index: 100;
+    z-index: 1;
 }
 
 .modal.open {
